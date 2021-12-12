@@ -1,0 +1,39 @@
+POST /api/auth/signup HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 140
+
+{
+    "username": "praful_pathare",
+    "email": "patharepraful@gmail.com",
+    "password": "imking98",
+    "roles": ["ADMIN", "MERCHANT", "CLIENT"]
+}
+
+###
+
+POST /api/auth/signin HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Content-Length: 140
+
+{
+    "username": "praful_pathare",
+    "password": "imking98"
+}
+
+###
+
+GET /api/test/user HTTP/1.1
+Host: localhost:8080
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjM5MzI3NjM5LCJleHAiOjE2Mzk0MTQwMzl9.gZeV4f-ZEVrUMPDjDo2dWvzWWntAOCY6gu1DCOx_YUc
+Content-Type: application/json
+Content-Length: 140
+
+###
+
+GET /api/test/admin HTTP/1.1
+Host: localhost:8080
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjM5MzI3NjM5LCJleHAiOjE2Mzk0MTQwMzl9.gZeV4f-ZEVrUMPDjDo2dWvzWWntAOCY6gu1DCOx_YUc
+Content-Type: application/json
+Content-Length: 140
